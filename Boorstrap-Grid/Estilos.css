@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: beige;
+}
+.row{
+    height: 600px;
+}
+.column1{
+    background-color: salmon;
+}
+.column2{
+    background-color: rosybrown;
+}
+.column3{
+    background-color: salmon;
+}
+.column4{
+    background-color: rosybrown;
+}
+.column5{
+    background-color: salmon;
+}
+.column6{
+    background-color: rosybrown;
+}

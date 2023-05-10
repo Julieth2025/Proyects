@@ -1,0 +1,107 @@
+/*var placa, tiempo1, tiempo2;
+placa = parseInt( parseInt("Cobro Parqueadero por minuto $100. \n\nFavor Ingresar la Placa del vehiculo"));
+tiempo1 = parseInt( prompt("\nFavor ingresar la Hora de entrada: "));
+tiempo2 = parseInt( prompt("\nFavor ingresar la Hora de Salida: "));
+
+var seg = 60;
+var min = seg * 60;
+var hora = min * 60;
+
+let resultado = tiempo1 + tiempo2 ;
+document.write("Placa registrada" + placa);
+document.write("\nEl costo a pagar por el parqueadero es de " + resultado * 100);*/
+
+
+//ESTE FUNCIONA PERO FALLAS TEGNICAS PARA CALCULAR EL TIEMPO DEL PARQUEADERO PARA ASÍ COBRAR
+
+
+var txt1, txt2, txt3;
+
+ vehiculo.prototype.placa;
+ vehiculo.prototype.horaentrada;
+ vehiculo.prototype.horasalida;
+ vehiculo.prototype.imprimir = vehiculo_imprimir;
+ function vehiculo(a1, a2, a3){
+    this.set("Placa",a1); 
+    this.set("Hora de Entrada",a2); 
+    this.set("Hora de Salida",a3);
+}
+vehiculo.prototype.get=function(atributo){
+    switch(atributo){
+        case "Placa": return this.placa;
+        case "Hora de Entrada": return this.horaentrada;
+        case "Hora de Salida": return this.horasalida;
+    }
+}
+vehiculo.prototype.set=function(atributo, valor){
+    switch(atributo){
+        case "Placa": this.placa=valor; break;
+        case "Hora de Entrada": this.horaentrada=valor; break;
+        case "Hora de Salida": this.horasalida=valor; break;
+    }
+    resultado = this.horaentrada - this.horasalida;
+}
+function vehiculo_imprimir(){
+    document.write("Placa: ",this.get("Placa"));
+    document.write("Hora de Entrada: ",this.get("Hora de Entrada"));
+    document.write("Hora de Salida ",this.get("Hora de Salida"));
+}
+txt1 = prompt("Favor ingresar Placa: ");
+txt2 = prompt("Favor ingresar Hora de Entrada: ");
+txt3 = prompt("Favor ingresar Hora de Salida: ");
+var e = new vehiculo(txt1,txt2,txt3,);
+e.imprimir();
+
+
+/*
+
+EJEMPLO PARA CALCULAR EL TIEMPO PERO NO FUNCIONA
+
+function calculardiferencia(){
+    var hora_inicio = $('#hora_desde').val();
+    var hora_final = $('#hora_hasta').val();
+    
+    // Expresión regular para comprobar formato
+    var formatohora = /^([01]?[0-9]|2[0-3]):[0-5][0-9]$/;
+    
+    // Si algún valor no tiene formato correcto sale
+    if (!(hora_inicio.match(formatohora)
+          && hora_final.match(formatohora))){
+      return;
+    }
+    
+    // Calcula los minutos de cada hora
+    var minutos_inicio = hora_inicio.split(':')
+      .reduce((p, c) => parseInt(p) * 60 + parseInt(c));
+    var minutos_final = hora_final.split(':')
+      .reduce((p, c) => parseInt(p) * 60 + parseInt(c));
+    
+    // Si la hora final es anterior a la hora inicial sale
+    if (minutos_final < minutos_inicio) return;
+    
+    // Diferencia de minutos
+    var diferencia = minutos_final - minutos_inicio;
+    
+    // Cálculo de horas y minutos de la diferencia
+    var horas = Math.floor(diferencia / 60);
+    var minutos = diferencia % 60;
+    
+    $('#horas_justificacion_real').val(horas + ':'
+      + (minutos < 10 ? '0' : '') + minutos);  
+  }
+  
+  $('#hora_desde').change(calculardiferencia);
+  $('#hora_hasta').change(calculardiferencia);
+  calculardiferencia();*/
+
+
+
+/* ESTE ERA OTRO TIPO DE INTENTO PERO NO SALIO COMO PENSABA
+
+horaentrada = parseInt( prompt("Igresar la Hora de Entrada\nHora : "));
+minentrada = parseInt( prompt("Igresar la Hora de Entrada\nMinutos : "));
+horasalida = parseInt( prompt("Igresar la Hora de Salida\nHora : "));
+minsalida = parseInt( prompt("Igresar la Hora de Salida\nMinutos : "));
+let resultado = horaentrada - horasalida;
+let resultado1 = minsalida - minsalida;
+document.write("Placa del Vehiculo Registrada", placa, "Tiempo parqueadero total: ", resultado, ":", resultado1);*/

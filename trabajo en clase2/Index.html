@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTP-8"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./bootstrap-5,2,2-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="mb-3">
+        <label for="name" class="form-label">Nombre</label>
+        <input name="name" type="text" id="email" class="form-control" placeholder="Escriba sus nombres" form-control-lg/>
+      </div>
+      <div class="mb-3">
+        <label for="email">E-mail</label>
+        <input name="email" type="text" id="email" class="form-control" placeholder="Escriba su email"/>
+      </div>
+      <div class="mb-3">
+        <label for="description">Descripción</label>
+        <textarea name="description" id="description" cols="30" rows="20" class="form-control" placeholder="Escriba su descripcion"></textarea>
+      </div>
+      <form class="row g-3">
+        <label for="email" class="col-form-label col-1">Email</label>
+        <div class="col-auto">
+          <input disabled value="stayaroha219@gmail.com" class="form-control-plaintext" id="email" type="email" name="name">
+        </div>
+        <div class="col-auto">
+          <label for="inputPassword2" class="visually-hidden">Password</label>
+          <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary mb-3">Confirm</button>
+        </div>
+      </form>
+      <div class="container border mb-3 py-4" style="width: 400px; height:250px; background-color: mediumslateblue;">
+        <h5 class="text-center">Inicio de Sesión</h5>
+        <form action="enviar-formulario" method="post">
+          <input class="form-control mb-3" type="text" name="Usuario" value="" placeholder="&#128272; Email">
+          <input class="form-control mb-3" type="password" name="Contraseña" value="" placeholder="&#128272; Contraseña">
+          <button class="btn btn-primary align-center" type="submit">Ingresar</button>
+          <p><a href="#">¿Olvidaste la contraseña?</a></p>
+        </form>
+      </div>
+      <div class="mb-3">
+  <label for="formFile" class="form-label">Default file input example</label>
+  <input class="form-control" type="file" id="formFile">
+</div>
+<div class="mb-3">
+  <label for="formFileMultiple" class="form-label">Multiple files input example</label>
+  <input class="form-control" type="file" id="formFileMultiple" multiple>
+</div>
+<div class="mb-3">
+  <label for="formFileDisabled" class="form-label">Disabled file input example</label>
+  <input class="form-control" type="file" id="formFileDisabled" disabled>
+</div>
+<div class="mb-3">
+  <label for="formFileSm" class="form-label">Small file input example</label>
+  <input class="form-control form-control-sm" id="formFileSm" type="file">
+</div>
+<div>
+  <label for="formFileLg" class="form-label">Large file input example</label>
+  <input class="form-control form-control-lg" id="formFileLg" type="file">
+</div>
+    </div>
+  </body>
+  <footer>
+    .
+  </footer>
+</html>

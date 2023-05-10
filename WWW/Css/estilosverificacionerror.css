@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	min-height: 100vh;
+	background-image: url('../Image/natura.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	width: 80%;
+	margin: auto;
+	background: #fff;
+	max-width: 400px;
+	padding: 4.5em 3em;
+	border-radius: 10px;
+	box-shadow: 0 5px 10px -5px rgb(0 0 0 /30%);
+	text-align: center;
+}
+
+.container1{
+	
+}
+
+a img{
+	width: 30%;
+}

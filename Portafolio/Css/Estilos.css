@@ -1,0 +1,43 @@
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+.principal{
+    background: linear-gradient( rgb(82, 43, 237), rgb(97, 30, 159), rgb(167, 85, 167));
+}
+header{
+    background: rgb(23, 23, 23);
+}
+.contactenos{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+}
+.img {
+    width: 20px;
+}
+footer{
+    background: rgb(23, 23, 23); 
+}
+footer a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+footer img{
+    width: 7%;
+}
+.seccion1{
+    background: linear-gradient(rgb(167, 85, 167), rgb(97, 30, 159), rgb(82, 43, 237));
+}
+.article{
+    background: linear-gradient( rgb(82, 43, 237), rgb(97, 30, 159), rgb(167, 85, 167));
+}
+.x{
+    transform: rotate(180deg);
+    background: linear-gradient( rgb(255, 0, 0), rgb(255, 82, 24), rgb(251, 239, 9), rgb(0, 127, 8), rgb(42, 21, 197), rgb(143, 7, 222));
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
